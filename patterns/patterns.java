@@ -54,6 +54,47 @@ class patterns {
             System.out.println();
         }
     }
+
+    void pattern7(int n){
+        
+        for(int i = 1 ; i<=n;i++){
+            for(int j = 1; j <= n - i + 1; j++){
+                System.out.print(j );
+            }
+            System.out.println();
+        }
+    }
+
+    void pattern8(int n){
+        for(int i = 0 ; i<n ; i++){
+            for (int j = 0 ;j<n-i-1;j++){
+                System.out.print(" ");
+            }
+            for(int k =0;k<2*i+1;k++){
+                System.out.print("*");
+            }
+            for(int l = 0 ;l<i-1;l++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+     void pattern9(int n){
+        for(int i = 0 ; i<n ; i++){
+            for (int j = 0 ;j<i;j++){
+                System.out.print(" ");
+            }
+            for(int k =0;k<2*n-2*i-1;k++){
+                System.out.print("*");
+            }
+            for(int l = 0 ;l<i;l++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -73,6 +114,13 @@ class patterns {
         p.pattern5(n);
         System.out.println("pattern6:");
         p.pattern6(n);
+        System.out.println("pattern7:");
+        p.pattern7(n);
+        System.out.println("pattern8:");
+        p.pattern8(n);
+        System.out.println("pattern9:");
+        p.pattern9(n);
+
 
         sc.close();
     }
